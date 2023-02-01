@@ -6,7 +6,7 @@ const Recipes = (props) => {
   <div className="row">
     {recipes.map(recipe => (
     <RecipeItem 
-    key={user.id}
+    key={Date.now()}
     name= {recipe.recipe.label}
     image= {recipe.recipe.image}
     ingredientLines = {recipe.recipe.ingredientLines} 
